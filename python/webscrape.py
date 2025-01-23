@@ -6,7 +6,7 @@ from pathvalidate import sanitize_filename
 import os
 import re
 def cleaner_file_name(filename):
-    invalid_chars = r"\,<>:\’\’\'/\|\?\*"
+    invalid_chars = r"[,<>:\’\’\'/\|\?\*]"
     filename= re.sub(invalid_chars,"",filename)
     filename= re.sub("\s","_",filename)
     return filename
