@@ -18,4 +18,4 @@ etc/
 pyvenv.cfg
 share/
 .ipynb_checkpoints/
-config.py
+python/config.py
