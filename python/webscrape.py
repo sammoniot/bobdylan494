@@ -6,7 +6,7 @@ from lyricsgenius import Genius
 from pathvalidate import sanitize_filename
 import os
 import re
-target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\earlydylan\thefreewheelin'bobdylan"
+target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\latedylan\empireburlesque"
 
 if not os.path.exists(target_folder):
     os.makedirs(target_folder)
@@ -19,7 +19,7 @@ genius = Genius(GENIUS_API_TOKEN)
 artist = genius.search_artist("Bob Dylan", max_songs=3, sort="title")
 print(artist.songs)
 
-album = genius.search_album("The Freewheelin' Bob Dylan", "Bob Dylan")
+album = genius.search_album("Empire Burlesque", "Bob Dylan")
 
 for track in album.tracks:
     file_name = track.song.title + ".txt"
