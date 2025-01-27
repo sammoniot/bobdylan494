@@ -1,1 +1,0 @@
-GENIUS_API_TOKEN = "1eHSydZU6DqDROkteWbFhDQcZiuo8ncdHU4zmgTet2JAmnMJfl8ejnNI4uPSFwt5"
