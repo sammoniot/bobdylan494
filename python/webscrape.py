@@ -1,7 +1,8 @@
 import string
 
 
-GENIUS_API_TOKEN='1eHSydZU6DqDROkteWbFhDQcZiuo8ncdHU4zmgTet2JAmnMJfl8ejnNI4uPSFwt5'
+import config
+genius_token = config.GENIUS_API_TOKEN
 from lyricsgenius import Genius
 from pathvalidate import sanitize_filename
 import os
@@ -15,7 +16,7 @@ def cleaner_file_name(filename):
     filename= re.sub(invalid_chars,"",filename)
     filename= re.sub("\s","_",filename)
     return filename
-genius = Genius(GENIUS_API_TOKEN)
+genius = Genius(genius_token)
 artist = genius.search_artist("Bob Dylan", max_songs=3, sort="title")
 print(artist.songs)
 
