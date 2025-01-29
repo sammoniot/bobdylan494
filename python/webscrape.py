@@ -7,7 +7,7 @@ from lyricsgenius import Genius
 from pathvalidate import sanitize_filename
 import os
 import re
-target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\earlydylan\thefreewhelinbobdylan"
+target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\earlydylan\thefreewheelinbobdylan"
 
 if not os.path.exists(target_folder):
     os.makedirs(target_folder)
