@@ -19,3 +19,4 @@ pyvenv.cfg
 share/
 .ipynb_checkpoints/
 python/config.py
+python/methods.txt
