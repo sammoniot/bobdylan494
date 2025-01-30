@@ -1,6 +1,0 @@
-Things I want to tag with maybe regex
-1. song titles to track total number of songs
-2. Themes - religious,political,romance
-3. Harmonica solos?
-4. Music styles
-5. Total number of verses
