@@ -1,5 +1,6 @@
 import config
 from lyricsgenius import Genius
+import csv
 genius_token = config.GENIUS_API_TOKEN
 genius = Genius(genius_token)
 artist_id = 181  # Example ID; change this as needed
@@ -18,11 +19,27 @@ while True:
         break
     page += 1
 
- #albums_data = genius.artist_albums(artist_id)
+albums_data = genius.artist_albums(artist_id)
 #print(albums_data)
 #print(all_albums)
 # Ensure we got a valid response
+data = []
 for album in all_albums:
     album_title = album.get('name') or album.get('title', 'Unknown Title')  # Some versions use 'title' instead of 'name'
-    album_year = album.get('release_date_for_display', 'Unknown Year')  # Safely get the release year
-    print(f"{album_title} ({album_year})")
+    album_date = album.get('release_date_for_display', 'Unknown Year')  # Safely get the release year
+    album_components = album.get('release_date_components', {})  # Get the nested dict safely
+    #print(album_components)
+    if album_components is not None:
+        album_year = album_components.get('year')
+    else: album_year = None
+    #print(album_year)
+    data.append([album_title, album_date, album_year])
+print(data)
+#print(f"{album_title} ({album_year})")
+with open("discography.tsv","w",newline='') as f:
+    writer = csv.writer(f,delimiter='\t')
+    writer.writerows(data)
+with open("discography.tsv",newline='') as csvfile:
+    data = csv.reader(csvfile, delimiter='\t')
+    for row in data:
+        print('\t'.join(row))
