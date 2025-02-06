@@ -7,7 +7,7 @@ from lyricsgenius import Genius
 from pathvalidate import sanitize_filename
 import os
 import re
-target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\earlydylan\testfolder"
+target_folder = r"C:\Users\sammo\OneDrive\Desktop\digit494\bobdylan494\lyrics-txt\latedylan\roughandrowdyways"
 
 if not os.path.exists(target_folder):
     os.makedirs(target_folder)
@@ -27,7 +27,7 @@ genius = Genius(genius_token)
 artist = genius.search_artist("Bob Dylan", max_songs=3, sort="title")
 print(artist.songs)
 
-album = genius.search_album("Highway 61 Revisited", "Bob Dylan")
+album = genius.search_album("Rough and Rowdy Ways", "Bob Dylan")
 
 for track in album.tracks:
     file_name = track.song.title + ".txt"
