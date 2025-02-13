@@ -28,8 +28,9 @@ while True:
 
 for album in all_albums:
     album_id = album['id']
-    album_data = genius.album_tracks(album_id)
-    
-    # album_titles = album_data['title']
-    # track_count = len(album_titles)
-    # print(f"Number of tracks for {album_id}: {track_count}")
+    album_data = genius.album_tracks(album_id) #different dict. needed for track information
+    album_title = album['name']
+
+    if album_data and 'tracks' in album_data:
+        track_count = len(album_data['tracks'])
+        print(f"Number of tracks for {album_title} id {album_id} : {track_count}")
