@@ -19,16 +19,7 @@ while True:
         break
     page += 1
 
-#albums_data = genius.artist_albums(artist_id)
-
-album_chart = genius.albums_charts(time_period='all_time', chart_genre='all', per_page=None, page=None, text_format=None,)
-for album in albums_data['albums']:
- albums_tracks = [ track.title for track in albums_data]
- unique_tracks = list(set(albums_tracks))
- print(f"Album: {albums_tracks} - {len(unique_tracks)} distinct songs")
-
-
-
+albums_data = genius.artist_albums(artist_id)
 #print(albums_data)
 #print(all_albums)
 # Ensure we got a valid response
@@ -37,22 +28,12 @@ for album in all_albums:
     album_title = album.get('name') or album.get('title', 'Unknown Title')  # Some versions use 'title' instead of 'name'
     album_date = album.get('release_date_for_display', 'Unknown Year')  # Safely get the release year
     album_components = album.get('release_date_components', {})  # Get the nested dict safely
-
-for album in album_chart:
-    print(albums_data)
-
-    #print(data)
-    #album_song_count = album.get('song_count', 0 )
-    #print(album_song_count)
-    #albums_charts = album.get('Genre','Unknown Genre')
-
     #print(album_components)
     if album_components is not None:
         album_year = album_components.get('year')
     else: album_year = None
-
     #print(album_year)
-    data.append([album_title, album_date, album_year,album_chart])
+    data.append([album_title, album_date, album_year])
 print(data)
 #print(f"{album_title} ({album_year})")
 with open("discography.tsv","w",newline='') as f:
