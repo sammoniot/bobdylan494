@@ -1,9 +1,16 @@
 import config
 from lyricsgenius import Genius
 import csv
+
 genius_token = config.GENIUS_API_TOKEN
 genius = Genius(genius_token)
-artist_id = 181  # Example ID; change this as needed
+artist_id = 181
+
+# def count_album_tracks(id):
+#     album=genius.album_tracks(id)
+#     print(album)
+
+
 all_albums = []
 page = 1
 while True:
@@ -19,46 +26,10 @@ while True:
         break
     page += 1
 
-#albums_data = genius.artist_albums(artist_id)
-
-album_chart = genius.albums_charts(time_period='all_time', chart_genre='all', per_page=None, page=None, text_format=None,)
-for album in albums_data['albums']:
- albums_tracks = [ track.title for track in albums_data]
- unique_tracks = list(set(albums_tracks))
- print(f"Album: {albums_tracks} - {len(unique_tracks)} distinct songs")
-
-
-
-#print(albums_data)
-#print(all_albums)
-# Ensure we got a valid response
-data = []
 for album in all_albums:
-    album_title = album.get('name') or album.get('title', 'Unknown Title')  # Some versions use 'title' instead of 'name'
-    album_date = album.get('release_date_for_display', 'Unknown Year')  # Safely get the release year
-    album_components = album.get('release_date_components', {})  # Get the nested dict safely
-
-for album in album_chart:
-    print(albums_data)
-
-    #print(data)
-    #album_song_count = album.get('song_count', 0 )
-    #print(album_song_count)
-    #albums_charts = album.get('Genre','Unknown Genre')
-
-    #print(album_components)
-    if album_components is not None:
-        album_year = album_components.get('year')
-    else: album_year = None
-
-    #print(album_year)
-    data.append([album_title, album_date, album_year,album_chart])
-print(data)
-#print(f"{album_title} ({album_year})")
-with open("discography.tsv","w",newline='') as f:
-    writer = csv.writer(f,delimiter='\t')
-    writer.writerows(data)
-with open("discography.tsv",newline='') as csvfile:
-    data = csv.reader(csvfile, delimiter='\t')
-    for row in data:
-        print('\t'.join(row))
+    album_id = album['id']
+    album_data = genius.album_tracks(album_id)
+    
+    # album_titles = album_data['title']
+    # track_count = len(album_titles)
+    # print(f"Number of tracks for {album_id}: {track_count}")
