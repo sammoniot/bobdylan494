@@ -36,10 +36,10 @@ for album in all_albums:
     data.append([album_title, album_date, album_year])
 print(data)
 #print(f"{album_title} ({album_year})")
-with open("discography.tsv","w",newline='') as f:
+with open("discography1.tsv","w",newline='') as f:
     writer = csv.writer(f,delimiter='\t')
     writer.writerows(data)
-with open("discography.tsv",newline='') as csvfile:
+with open("discography1.tsv",newline='') as csvfile:
     data = csv.reader(csvfile, delimiter='\t')
     for row in data:
         print('\t'.join(row))
