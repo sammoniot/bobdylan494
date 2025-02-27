@@ -10,5 +10,14 @@ color:blue
 }
 div.images{
 border-style:solid;
-border-color:black
+border-color:black;
+border-width:thick;
+width: 100%;
+height:100%;
+margin:0;
+padding:0;
+overflow-x:hidden
+}
+body.methods{
+background:#967BB6    
 }
