@@ -48,7 +48,7 @@ border-color:black;
 border-width:thick;
 background:white;
 width: 85%;
-height:105%;
+
 margin:0;
 padding:0;
 text-align:left;
@@ -61,12 +61,16 @@ border-color:black;
 border-width:thick;
 background:white;
 width: 85%;
-height:105%; 
+
 margin:0;
 padding:0;
 text-align:left;
 display:flex;
 
+}
+figure.dylanpic img{
+max-width: 400px;  
+width:70%
 }
 img#img1{
  border-style:solid;
