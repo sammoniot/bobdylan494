@@ -5,6 +5,10 @@ font-family:Georgia,serif
 body.placeholder{
 background:#7CB9E8   
 }
+body.viz{
+background:blue;
+color:white
+}
 a.link{
 color:white    
 }
