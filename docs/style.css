@@ -1,12 +1,13 @@
 body.index{
 background:#1E90FF; 
-font-family:Georgia,serif
+font-family:Georgia,serif;
+color:white
 }
 body.placeholder{
 background:#7CB9E8   
 }
 body.viz{
-background:blue;
+background:#FFB6C1;
 color:white
 }
 a.link{
@@ -32,15 +33,19 @@ h1{
 border-style:solid;
 border-color:white;
 border-width:thick; 
-width:30%;
+width:15%;
 height:100%
 }
 h2{
 border-style:solid;
 border-color:white;
 border-width:thick;
-width:15%;
+width:12%;
 height:100%
+}
+iframe.timemap{
+width:80%;
+height:500px
 }
 div.images1{
 border-style:solid;
@@ -60,6 +65,7 @@ border-style:solid;
 border-color:black;
 border-width:thick;
 background:white;
+color:black;
 width: 85%;
 
 margin:0;
@@ -69,7 +75,7 @@ display:flex;
 
 }
 figure.dylanpic img{
-max-width: 400px;  
+max-width: 300px;  
 width:70%
 }
 img#img1{
@@ -110,12 +116,46 @@ border-color:green;
 border-radius:15px;
 border-width:15px;      
 }
+img#donut{
+width:35%    
+}
+img#inst{
+width:55%    
+}
 footer{
 border-style:solid;
 border-color:black;
 border-radius:15px;
-border-width:15px;     
+border-width:15px; 
+background:white;
+color:black;
+width:50%
 }
 body.methods{
-background:#967BB6    
+background:#967BB6;
+color:white
+}
+body.about{
+background:purple; 
+color:white
+}
+p.about{
+border-style:solid;
+border-color:black;
+border-radius:15px;
+border-width:15px; 
+
+width:80%
+}
+div.power{
+border-style:solid;
+border-color:orange;
+border-radius:10px;
+border-width:10px;    
+}
+div.svg{
+border-style:solid;
+border-color:white;
+border-radius:10px;
+border-width:10px; 
 }
