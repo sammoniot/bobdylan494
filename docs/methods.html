@@ -5,9 +5,11 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body class="methods">
-        <nav class="nav">|<a href="index.html">Home</a>|<a href="about.html">About Me</a>|<a href="methods.html">Methods</a>|<a
-                href="viz.html">Visualizations</a></nav>
-        <h1>My Methods to Finding Data</h1>
+        <nav class="nav"><a href="index.html">Home</a>|<a href="about.html">About Me</a>|<a
+                href="methods.html">Methods</a>|<!--<a href="viz.html">Visualizations</a>-->
+            <a href="albumType.html">Album Types</a>|<a href="format.html">Media Formats</a>
+        </nav>
+        <section><h1>My Methods to Finding Data</h1>
         <p>For this analysis,I use Python for the webscraping and consult two main sources:</p>
         <ul>
             <li>
@@ -18,7 +20,7 @@
                     Discography</a>
             </li>
         </ul>
-        <h2>My Questions</h2>
+       <section class="sub"> <h2>My Questions</h2>
         <p>There are a few questions that I plan on answering:</p>
         <ul>
             <li>What is Dylan's production rate over the years?Has he released more original albums
@@ -27,19 +29,31 @@
             <li>How many different genres does he dabble in?Does he mostly stick with one
                 genre?</li>
             <li>How many songs has he written?</li>
-        </ul>
-        <h3>Data Collection</h3>
+        </ul></section>
+       <section class="sub"> <h2>Data Collection</h2>
         <p>I created multiple .py files to output tsv and csv files to organize my data. Then,I made
             sure that the variables like Album names were consistent across the files so that I
-            could use the VLOOKUP function. If the album title was slightly different in one
+            could use the "VLOOKUP function. If the album title was slightly different in one
             file,the VLOOKUP function would not work. For example,if there was an extra space in the
             title "Bob Dylan" like this: " Bob Dylan" or there was a typo,the function cannot match
-            the data to the other table. I used the COUNTIF function to determine which period the
+            the data to th"e other table. I used the COUNTIF function to determine which period the
             album belongs to. Then,after compiling and cleaning data,I would use pivot tables to
-            filter data. I normally filter by period which is either early or late dylan.In the rows
+            filter data. "I normally filter by period which is either early or late dylan.In the rows
             column I would put a variable like format and the count of format. The table would read
             that Early Dylan had a count of 17 vinyl which would mean that all 17 albums were
-            released on vinyl. If you would like to download my xlsx, click this download link:<a href="../data/fulldata.xlsx" download>fulldata.xlsx</a> </p>
+</section>
+        <section class="sub">
+            <h2>Visualizations</h2>
+    
+        <p>The visualizations you see on the album analysis and media format pages are made with:</p>
+        <ul>
+            <li>Power BI</li>
+            <li>Kumu.io</li>
+            <li>AntConc</li>
+        </ul></section>
+        
+        </section>
+>>>>>>> a43926d6e5a55e97cc4c074006bd5fbd3d5231a5
         <footer>
             <p>Be sure to check out my GitHub repo by clicking <a
                     href="https://github.com/sammoniot/bobdylan494/tree/main" target="blank"
