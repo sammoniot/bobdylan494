@@ -16,6 +16,17 @@ color:white;
 a:visited{
 color:white    
 }
+
+section.sub a {
+color:blue;
+}
+section.sub a:active {color:red;
+    
+}
+section.sub a:visited{
+color:purple;    
+}
+
 nav.nav{
 background:maroon;
 color:white;
