@@ -4,26 +4,23 @@
     <desc></desc>
     <g alignment-baseline="baseline" transform="translate(100, -50)">
       
-        <rect id="vinyl" stroke="purple" x="0" y="180" width="500" height="10" style="stroke-width:56"></rect>  
-        
-        <rect id="eight" stroke="yellow" x="100" y="250" width="300" height="10" style="stroke-width:56"></rect>
-       
-        <rect id="cassette" stroke="pink" width="150" height="10" x="175" y="320" style="stroke-width:48"></rect>
-       
-        
-        <!-- Data for Cassette -->
-        <text x="120" y="330" fill="black" text-anchor="middle">Cassette</text>
-        <text x="250" y="330" fill="black" text-anchor="middle">4</text>
-      
-        
-        <!-- Data for 8-Track -->
-        <text x="25" y="260" fill="black" text-anchor="middle">Eight-Track</text>
-        <text x="250" y="260" fill="black" text-anchor="middle">8</text>
-        
+        <rect id="vinyl" stroke="purple" x="0" y="180" width="500" height="10" style="stroke-width:56"></rect> 
         <!--Data for Vinyl-->
         <text x="-50" y="190" fill="black" text-anchor="middle">Vinyl</text>
         <text x="250" y="190" fill="white" text-anchor="middle">17</text>
         
+        
+        <rect id="eight" stroke="yellow" x="100" y="250" width="300" height="10" style="stroke-width:56"></rect>
+        <!-- Data for 8-Track -->
+        <text x="25" y="260" fill="black" text-anchor="middle">Eight-Track</text>
+        <text x="250" y="260" fill="black" text-anchor="middle">8</text>
+        
+       
+        <rect id="cassette" stroke="pink" width="150" height="10" x="175" y="320" style="stroke-width:48"></rect>
+        <!-- Data for Cassette -->
+        <text x="120" y="330" fill="black" text-anchor="middle">Cassette</text>
+        <text x="250" y="330" fill="black" text-anchor="middle">4</text>
+     
         <!-- Title -->
         <text x="250" y="120"  fill="black" text-anchor="middle">Early Dylan Media Formats</text>
      
