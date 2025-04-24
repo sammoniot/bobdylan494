@@ -27,38 +27,40 @@
                 1980-2020. Although this may seem uneven,there are 17 original albums from his early
                 years and 16 from his late years.</p>
             <section class="sub">
-                <h2>Music History</h2>
-                <p>Bob Dylan has created original musical content from 1962 to 2020. Over the
-                    years,Dylan has created music spanning many different genres. Since 1962, he has
-                    released 33 original studio albums and released them on different formats.Take a
-                    look at my timemapper to learn more!</p>
-                <iframe class="timemap" src="https://timemapper.okfnlabs.org/anon/kl5nj5-media-format-timeline?embed=1"></iframe>
-            </section>
-            <section class="sub">
                 <h2>Data</h2>
-            <p>I used several platforms to acquire the data necessary for this project. Click <a
-                    href="methods.html" target="blank">here</a> to learn more about them. I
-                organized the data with excel,tsv and csv files.Click here to view my data files.
-                Additionally,I used advanced excel features such as VLOOKUP,COUNTIF,Pivot Tables and
-                other functions to clean,organize and complile data. </p>
-            <h4>Problems</h4> There were various problems that occured as I worked on this project.
-            First,when attempting to retrieve data from Genius,The files with lyrics would repeat
-            and/or include special characters in place of apostrophes. I fixed these issues by using
-            regex to find the end of the song which had the text"Embed" at the end before repeating
-            and then deleting the repeating lines.I also used find and replace to change the special
-            characters to apostrophes. Another issue was that Genius did not have as much data as I
-            would have liked. I was able to get album name,track count and release years but I was
-            unable to get additional information such as genre,instruments and other potentially
-            relevant data. In a meeting with Dr.B,we found a Bob Dylan wiki page that was created a
-            run by Dylan fans. This site gave me relevant data such as genre,instrumentation,format
-            and more. This solved the problem and I was able to get more data as a result. A third
-            issue was that various excel functions like VLOOKUP do not work on tsv or csv files so I
-            had to make a copy of the data in an excel spreadsheet that would be compatible with
-            excel spreadsheets.For part of my analysis,I wanted to find the total number of verses
-            over 8 albums. 4 in Dylan's early years and 4 in his late years. Most of the song txt
-            files that I got via webscraping Genuis had verses tagged but some did not. Since I was
-            familiar with most of the songs,like Queen Jane Approximately,I was able to figure out
-            how many verses there were and added them myself.</section>
+                <p>I used several platforms to acquire the data necessary for this project. Click <a
+                        href="methods.html" target="blank">here</a> to learn more about them. I
+                    organized the data with excel,tsv and csv files.Click here to view my data
+                    files. Additionally,I used advanced excel features such as VLOOKUP,COUNTIF,Pivot
+                    Tables and other functions to clean,organize and complile data. </p>
+                <h4>Problems</h4> There were various problems that occured as I worked on this
+                project. First,when attempting to retrieve data from Genius,The files with lyrics
+                would repeat and/or include special characters in place of apostrophes. I fixed
+                these issues by using regex to find the end of the song which had the text"Embed" at
+                the end before repeating and then deleting the repeating lines.I also used find and
+                replace to change the special characters to apostrophes. Another issue was that
+                Genius did not have as much data as I would have liked. I was able to get album
+                name,track count and release years but I was unable to get additional information
+                such as genre,instruments and other potentially relevant data. In a meeting with
+                Dr.B,we found a Bob Dylan wiki page that was created a run by Dylan fans. This site
+                gave me relevant data such as genre,instrumentation,format and more. This solved the
+                problem and I was able to get more data as a result. A third issue was that various
+                excel functions like VLOOKUP do not work on tsv or csv files so I had to make a copy
+                of the data in an excel spreadsheet that would be compatible with excel
+                spreadsheets.For part of my analysis,I wanted to find the total number of verses
+                over 8 albums. 4 in Dylan's early years and 4 in his late years. Most of the song
+                txt files that I got via webscraping Genuis had verses tagged but some did not.
+                Since I was familiar with most of the songs,like Queen Jane Approximately,I was able
+                to figure out how many verses there were and added them myself.</section>
+            <section class="sub">
+                <h2>My Findings</h2>
+                <p>After analyzing my data,I've learned a lot about Bob Dylan and his career. I
+                    analyzed data about instruments played,tracks,verses,genres,album types. These
+                    findings can be found on <a href="albumType.html">album
+                    type</a>.Additionally,since Dylan's career is multi-generational, I've also
+                    analyzed data about his media formats which can be found on the <a
+                        href="format.html">Media Formats page</a>. </p>
+            </section>
             <section class="sub">
                 <h2>Pictures</h2>
                 <div class="images2">
@@ -92,6 +94,7 @@
                         alt="Creative Commons License" />
                 </a><br />This work is licensed under a <a rel="license"
                     href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
-                    Attribution-NonCommercial 4.0 International</a>. </footer></section>
+                    Attribution-NonCommercial 4.0 International</a>. </footer>
+        </section>
     </body>
 </html>

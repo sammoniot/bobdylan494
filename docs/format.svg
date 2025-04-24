@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
     <desc></desc>
     <g alignment-baseline="baseline">
-        <text x="550" y="100">Early Dylan Media Formats</text>
+        <text x="15" y="-170">Early Dylan Media Formats</text>
         <rect stroke="purple" x="400" y="180" width="500" height="10" style="stroke-width:56"></rect>  
         <text x="330" y="180" fill="purple">Vinyl</text>
         <text x="630" y="180" fill="white">17</text>
