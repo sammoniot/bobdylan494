@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330">
     <desc></desc>
-    <g alignment-baseline="baseline">
-        <text x="15" y="-170">Early Dylan Media Formats</text>
-        <rect stroke="purple" x="400" y="180" width="500" height="10" style="stroke-width:56"></rect>  
-        <text x="330" y="180" fill="purple">Vinyl</text>
-        <text x="630" y="180" fill="white">17</text>
-        <rect stroke="yellow" x="470" y="250" width="300" height="10" style="stroke-width:56"></rect>
-        <text x="360" y="260" fill="yellow">Eight-Track</text>
-        <text x="630" y="250" fill="white">8</text>
-        <rect stroke="pink" width="150" height="10" x="550" y="320" style="stroke-width:48"></rect>
-        <text x="470" y="320" fill="Pink">Cassette</text>
-        <text x="630" y="320" fill="white">4</text>
+    <g alignment-baseline="baseline" transform="translate(100, -50)">
+      
+        <rect id="vinyl" stroke="purple" x="0" y="180" width="500" height="10" style="stroke-width:56"></rect>  
+        
+        <rect id="eight" stroke="yellow" x="100" y="250" width="300" height="10" style="stroke-width:56"></rect>
+       
+        <rect id="cassette" stroke="pink" width="150" height="10" x="175" y="320" style="stroke-width:48"></rect>
+       
+        
+        <!-- Data for Cassette -->
+        <text x="120" y="330" fill="black" text-anchor="middle">Cassette</text>
+        <text x="250" y="330" fill="black" text-anchor="middle">4</text>
+      
+        
+        <!-- Data for 8-Track -->
+        <text x="25" y="260" fill="black" text-anchor="middle">Eight-Track</text>
+        <text x="250" y="260" fill="black" text-anchor="middle">8</text>
+        
+        <!--Data for Vinyl-->
+        <text x="-50" y="190" fill="black" text-anchor="middle">Vinyl</text>
+        <text x="250" y="190" fill="white" text-anchor="middle">17</text>
+        
+        <!-- Title -->
+        <text x="250" y="120"  fill="black" text-anchor="middle">Early Dylan Media Formats</text>
+     
+        
+        
     </g>
 </svg>
