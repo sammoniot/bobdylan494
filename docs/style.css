@@ -1,6 +1,7 @@
-body.index{
+body.index, body.viz{
 background:#1E90FF; 
 font-family:Georgia,serif;
+font-size:larger;
 color:black;
 }
 body.placeholder{
@@ -90,6 +91,9 @@ figure.dylanpic img{
 max-width: 300px;  
 width:70%
 }
+
+img#format{ width:70%; }
+
 img#img1{
  border-style:solid;
 border-color:violet;
