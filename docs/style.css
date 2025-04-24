@@ -92,7 +92,7 @@ max-width: 300px;
 width:70%
 }
 
-img#format{ width:70%; }
+img.format{ width:70%; }
 
 img#img1{
  border-style:solid;
