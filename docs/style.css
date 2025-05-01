@@ -1,12 +1,13 @@
+body {font-family:Georgia,serif;
+}
+
 body.index, body.viz{
 background:#1E90FF; 
 font-family:Georgia,serif;
 font-size:larger;
 color:black;
 }
-body.placeholder{
-background:#7CB9E8   
-}
+
 body.viz{
 background:#FFB6C1;
 }
@@ -14,16 +15,16 @@ a {
 color:white;
 }
 a:visited{
-color:white    
+color:white;    
 }
 
-section.sub a {
+section.sub a, footer a, a.footer {
 color:blue;
 }
-section.sub a:active {color:red;
+section.sub a:active, .footer a:active {color:red;
     
 }
-section.sub a:visited{
+section.sub a:visited, .footer a:active {
 color:purple;    
 }
 
@@ -35,14 +36,15 @@ border-style:solid;
 border-color:black;
 border-width:thick;
 border-radius:15px;
-width: 40%;
-height:100%;
-margin:auto
+width: 80%;
+margin:auto;
+padding:1em;
 
 }
 nav a {
 padding-left:1em; 
 padding-right:1em;
+white-space: nowrap;
 }
 
 
@@ -54,10 +56,17 @@ section {
 section.sub {
     background: papayawhip;
     color:black;
+    padding:1em;
+    border-style:solid;
+    border-color:black;
+    border-radius:15px;
+    margin:auto;
 }
 h1{
+font-size:2em;
+text-align:center;
 /*border-style:solid;
-border-color:white;
+border-color:white;*/
 
 }
 h2{
@@ -90,18 +99,18 @@ display:flex;
 }
 div.images2{
 border-style:solid;
+border-radius:15px;
 border-color:black;
 border-width:thick;
 background:white;
 color:black;
 width: 85%;
-
-margin:0;
-padding:0;
+margin:auto;
 text-align:left;
 display:flex;
-
+flex-wrap: wrap;
 }
+figure.dylanpic {flex:1;}
 figure.dylanpic img{
 max-width: 300px;  
 width:70%
@@ -156,27 +165,30 @@ width:55%
 footer{
 border-style:solid;
 border-color:black;
+border-width:thick;
 border-radius:15px;
-border-width:15px; 
 background:#CF9FFF;
 color:black;
-width:50%
+width:90%;
+margin:auto;
+padding:1em;
 }
 body.methods{
 background:#967BB6;
-color:white
+font-size:larger;
 }
 body.about{
 background:purple; 
-color:white
+color:white;
+font-size:larger;
 }
 p.about{
 border-style:solid;
 border-color:black;
 border-radius:15px;
-border-width:15px; 
-
-width:80%
+margin:auto;
+width:80%;
+padding:1em;
 }
 div.power{
 border-style:solid;
