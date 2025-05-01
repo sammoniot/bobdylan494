@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1000 530">
+    <desc></desc>
+    <g alignment-baseline="baseline" transform="translate(100, -50)"> <rect id="vinyl" stroke="purple" x="0" y="180" width="500" height="10" style="stroke-width:56"></rect> 
+        <!--Data for Vinyl-->
+        <text x="-50" y="190" fill="black" text-anchor="middle">Vinyl</text>
+        <text x="250" y="190" fill="white" text-anchor="middle">16</text>
+        
+        
+        <rect id="cassette" stroke="rgb(148, 196, 255)" x="100" y="250" width="300" height="10" style="stroke-width:56"></rect>
+        <!-- Data for 8-Track -->
+        <text x="25" y="260" fill="black" text-anchor="middle">Cassette</text>
+        <text x="250" y="260" fill="black" text-anchor="middle">13</text>
+        
+        
+        <rect id="eight" stroke="pink" width="300" height="10" x="100" y="320" style="stroke-width:48"></rect>
+        <!-- Data for Cassette -->
+        <text x="50" y="330" fill="black" text-anchor="middle">CD</text>
+        <text x="250" y="330" fill="black" text-anchor="middle">13</text>
+        
+        
+        <rect id="CD" stroke="red" x="250" y="390" width="10" height="10" stroke-width="48" />
+        <!--Data for Digital-->
+        <text x="200" y="400" fill="black" text-anchor="middle">Digital</text>
+        <text x="250" y="400" fill="black" text-anchor="middle">2</text>
+        
+        <rect stroke="yellow" x="250" y="460" width="10" height="10" style="stroke-width:48"></rect>
+        
+        <text x="180" y="470" fill="black" text-anchor="middle" >Eight-Track</text>
+        <text x="250" y="470" fill="black" text-anchor="middle" >2</text>
+        <!-- Title -->
+        <text x="250" y="120"  fill="black" text-anchor="middle">Late Dylan Media Formats</text></g>
+</svg>

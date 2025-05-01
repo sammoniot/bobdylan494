@@ -20,7 +20,7 @@
                     <p> These visualizations explore the rate of production over the years and what
                         types of album Dylan released. </p>
                     <figure>
-                        <img id="trackmap" src="images/albuminfo/albumntrack.png"
+                        <img id="trackmap" src="images/albumntrack.png"
                             alt="tree map displaying the average track count per album type." />
                         <figcaption>This tree map analyzes the average number of track counts per
                             album type,categorized by period. </figcaption>
@@ -33,7 +33,16 @@
                         well.Wheras all the songs in the live and comp albums in the early Dylan
                         period are restricted to just music that was released during that period. </p>
                     <figure>
-                        <img id="donut" src="images/albuminfo/totaltrackcount.png"
+                        <p>
+                            <strong>Most Frequently Used Instruments Throughout Career</strong>
+                        </p>
+                        <img id="inst" src="images/inst.png" alt="treemap of instrumentation" />
+                        <figcaption>This treemap analyzes the top 3 instruments that Dylan used over
+                            his entire career. This data includes all 33 original albums. He stays
+                            consistent in which instruments he uses. </figcaption>
+                    </figure>
+                    <figure>
+                        <img id="donut" src="images/totaltrackcount.png"
                             alt="donut graph displaying the total amount of tracks per period" />
                         <figcaption>This donut graph analyzes the sum of the total number of tracks
                             released by period.</figcaption>
@@ -44,7 +53,7 @@
                         comp tracks are most likely contributing factors to why the number is so
                         much higher than the early period.</p>
                     <figure>
-                        <img id="live" src="images/albuminfo/livencomp.png"
+                        <img id="live" src="images/livencomp.png"
                             alt="funnel graph that compares number of live and compilation albums" />
                         <figcaption>This funnel graph displays how many live and comp albums Dylan
                             released over his entire career.</figcaption>
@@ -55,29 +64,42 @@
                         compiling the works together.The live albums require more logistics such as
                         talent availiability that could make the production of live albums more
                         difficult than comp albums.</p>
-                   
                 </div>
             </section>
             <section class="sub">
                 <h2>Kumu.io</h2>
+                <iframe class="kumu" src="https://embed.kumu.io/7c8ab8559262dab61bed5cd83ddeda74"
+                ></iframe>
             </section>
             <section class="sub">
                 <h2>SVGs</h2>
+                <p>Early on in the project,I collected txt files of eight of Dylan's albums. Four
+                    are from his early years and four are from his late years. I used AntConc to
+                    find the verse frequency among the albums.</p>
                 <div class="svg">
                     <figure>
                         <img src="verses.svg" alt="bar graph" />
-                        <figcaption>DESCRIBE ME</figcaption>
+                        <figcaption>
+                            <p>This bar graph compares the average number of verses per among the
+                                selected albums.</p>
+                        </figcaption>
                     </figure>
-                    <p>Write about what we can learn from this visualization . . .</p>
+                    <p>Dylan is consistent among his entire career in verses.</p>
                     <figure>
                         <img src="song.svg" alt="bar graph" />
-                        <figcaption>DESCRIBE ME</figcaption>
+                        <figcaption>This bar graph analyzes the average song length of each period.
+                        </figcaption>
                     </figure>
-                    <p>Write about what we can learn from this visualization . . .</p>
+                    <p>Dylan's average song length increases by almost one minute. Over the years he
+                        gets more experimental and makes longer pieces. </p>
                     <figure>
                         <img class="format" src="genre.svg" alt="funnel graph" />
-                        <figcaption>DESCRIBE ME</figcaption>
+                        <figcaption>This funnel graph analyzes Dylan's top three genres of his
+                            career overall.</figcaption>
                     </figure>
+                    <p>Over the years,Dylan is consistent about what genres his albums are. At least
+                        half of his original albums are considered either folk,folk rock or
+                        both.</p>
                 </div>
             </section>
         </section>
